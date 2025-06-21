@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MovieBot Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d1117;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #e6edf3;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      font-size: 32px;
+      color: #58a6ff;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #8b949e;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #161b22;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 200px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      border-top: 1px solid #30363d;
+    }
+
+    @media screen and (max-width: 600px) {
+      .card {
+        width: 90%;
+      }
+
+      .card img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 MovieBot Dashboard</h1>
+  <p>Now Showing in Your Theatre</p>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SY679_.jpg" alt="Inception">
+      <div class="card-title">Inception</div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/51zUbui+gbL._AC_SY679_.jpg" alt="Interstellar">
+      <div class="card-title">Interstellar</div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg" alt="The Dark Knight">
+      <div class="card-title">The Dark Knight</div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" alt="Joker">
+      <div class="card-title">Joker</div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg" alt="Fight Club">
+      <div class="card-title">Fight Club</div>
+    </div>
+
+  </div>
+</body>
+</html>
